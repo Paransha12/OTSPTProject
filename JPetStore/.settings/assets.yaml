@@ -1,0 +1,196 @@
+name: JPetStore
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /JPetStore/src
+        type: javaClasspath
+  - name: DogCollection(2).recdata
+  - name: DogCollection(2).recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /JPetStore/DogCollection(2).recdata
+        type: recsessionRecdata
+  - name: DogCollection.recdata
+  - name: DogCollection.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /JPetStore/DogCollection.recdata
+        type: recsessionRecdata
+  - name: DogCollection3.recdata
+  - name: DogCollection3.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /JPetStore/DogCollection3.recdata
+        type: recsessionRecdata
+  - name: DogCollection4(2).recdata
+  - name: DogCollection4(2).recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /JPetStore/DogCollection4(2).recdata
+        type: recsessionRecdata
+  - name: DogCollection4.recdata
+  - name: DogCollection4.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /JPetStore/DogCollection4.recdata
+        type: recsessionRecdata
+  - name: DogCollection5.recdata
+  - name: DogCollection5.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /JPetStore/DogCollection5.recdata
+        type: recsessionRecdata
+  - name: DogCollection5.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 10.5.4.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EE847A6DF05E90EB29B43733396139
+    dependencies: 
+      - path: /JPetStore/DogCollection5.recsession
+        type: testRecsession
+  - name: DogCollection5_1700137200195.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1700137200195
+      tags: 
+      testId: A1EE847A6DF05E90EB29B43733396139
+      testName: DogCollection5
+    dependencies: 
+      - path: /JPetStore/DogCollection5.testsuite
+        type: statsSessionTest
+      - path: /JPetStore/DogCollection5_1700137200195_orch!system.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700137200195_orch!system.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700137200195_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700137200195_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700137200616.executiondlr
+        type: statsSessionAsset
+  - name: DogCollection5_1700137200195_orch!system.mstats
+  - name: DogCollection5_1700137200195_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700137200195_perf!localhost.mstats
+  - name: DogCollection5_1700137200195_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700137200616.executiondlr
+  - name: DogCollection5_1700142457496.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1700142457496
+      tags: 
+      testId: A1EE847A6DF05E90EB29B43733396139
+      testName: DogCollection5
+    dependencies: 
+      - path: /JPetStore/DogCollection5.testsuite
+        type: statsSessionTest
+      - path: /JPetStore/DogCollection5_1700142457496_orch!system.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700142457496_orch!system.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700142457496_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700142457496_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700142458285.executiondlr
+        type: statsSessionAsset
+  - name: DogCollection5_1700142457496_orch!system.mstats
+  - name: DogCollection5_1700142457496_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700142457496_perf!localhost.mstats
+  - name: DogCollection5_1700142457496_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700142458285.executiondlr
+  - name: DogCollection5_1700146169048.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1700146169048
+      tags: 
+      testId: A1EE847A6DF05E90EB29B43733396139
+      testName: DogCollection5
+    dependencies: 
+      - path: /JPetStore/DogCollection5.testsuite
+        type: statsSessionTest
+      - path: /JPetStore/DogCollection5_1700146169048_orch!system.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700146169048_orch!system.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700146169048_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700146169048_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700146169924.executiondlr
+        type: statsSessionAsset
+  - name: DogCollection5_1700146169048_orch!system.mstats
+  - name: DogCollection5_1700146169048_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700146169048_perf!localhost.mstats
+  - name: DogCollection5_1700146169048_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700146169924.executiondlr
+  - name: DogCollection5_1700152017594.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1700152017594
+      tags: 
+      testId: A1EE847A6DF05E90EB29B43733396139
+      testName: DogCollection5
+    dependencies: 
+      - path: /JPetStore/DogCollection5.testsuite
+        type: statsSessionTest
+      - path: /JPetStore/DogCollection5_1700152017594_orch!system.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700152017594_orch!system.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700152017594_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700152017594_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1700152018488.executiondlr
+        type: statsSessionAsset
+  - name: DogCollection5_1700152017594_orch!system.mstats
+  - name: DogCollection5_1700152017594_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700152017594_perf!localhost.mstats
+  - name: DogCollection5_1700152017594_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1700152018488.executiondlr
+  - name: DogCollection5_1704984578557.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1704984578557
+      tags: 
+      testId: A1EE847A6DF05E90EB29B43733396139
+      testName: DogCollection5
+    dependencies: 
+      - path: /JPetStore/DogCollection5.testsuite
+        type: statsSessionTest
+      - path: /JPetStore/DogCollection5_1704984578557_orch!system.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1704984578557_orch!system.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1704984578557_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1704984578557_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /JPetStore/DogCollection5_1704984579608.executiondlr
+        type: statsSessionAsset
+  - name: DogCollection5_1704984578557_orch!system.mstats
+  - name: DogCollection5_1704984578557_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1704984578557_perf!localhost.mstats
+  - name: DogCollection5_1704984578557_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DogCollection5_1704984579608.executiondlr
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: DogCollection5_Test_A1EE847A6DF05E90EB29B43733396139.java
+            type: com.ibm.rational.test.lt.generatedCode
